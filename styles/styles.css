@@ -1,0 +1,242 @@
+html {
+	box-sizing: border-box;
+}
+*,*:before,*:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+.flex {
+	display: flex;
+}
+.grid {
+	display: grid;
+}
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #f9d684;
+	z-index: 1;
+}
+div.header-content {
+	height: 70px;
+	align-items: center;
+	padding: 0 30px;
+}
+img#header-img {
+	width: 100px;
+	margin-left: 10px;
+}
+div.logo-container {
+	flex-grow: 4;
+	align-items: center;
+	user-select: none;
+	height: 100%;
+}
+div.logo-container h1{
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 3em;
+	letter-spacing: 2px;
+}
+nav#nav-bar {
+	flex-grow: 1;
+}
+ul {
+	list-style: none;
+}
+@media (max-width: 860px) {
+	div.header-content {
+		height: 90px;
+		flex-wrap: wrap;
+	}
+	ul.nav-menu {
+		flex-direction: column;
+	}
+	ul.nav-menu li{
+		padding: 1px 0;
+	}
+}
+
+@media (max-width: 595px) {
+	div.header-content, div.logo-container {
+		justify-content: center;
+		align-items: center;
+	}
+	nav#nav-bar ul {
+		background-color: #f9d684;
+		width: 100vw ;
+		margin: 0;
+	}
+}
+
+ul.nav-menu {
+	height: 100%;
+	align-items: center;
+}
+ul.nav-menu li {
+	margin: 0 35px;
+}
+ul.nav-menu a {
+	text-decoration: none;
+	color: #755139ff;
+	font-size: 1.05em;
+}
+div.main-container {
+	width: 95%;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top: 70px;
+	padding-top: 20px;
+}
+@media (max-width: 860px) {
+	div.main-container {
+		margin-top: 90px;
+	}
+}
+@media (max-width: 595px) {
+	div.main-container {
+		margin-top: 180px;
+	}
+}
+
+section.hero * {
+	margin-bottom: 20px;
+} 
+section.hero h2 {
+	text-align: center;
+}
+section.hero form{
+	flex-direction: column;
+	align-items: center;
+}
+input[type="email"] {
+	padding: 10px 15px;
+	border: none;
+	border: 1px solid #d1d1d1;
+	border-radius: 2px;
+	outline: none;
+}
+input[type="submit"] {
+	color: #F2EDD7FF;
+}
+.subm-btn {
+	padding: 10px;
+	font-size: 1em;
+	background-color: #94532a;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+section.features {
+	flex-direction: column;
+	text-align: center;
+}
+section.features div.feat-container {
+	flex-direction: column;
+	margin: 50px 0;
+}
+section.features div.desc {
+	flex-direction: column;
+	margin: 0 auto;
+	margin-bottom: 45px;
+}
+section.features div.desc h2 {
+	margin-bottom: 8px;
+}
+section.yt-vid div.vid-container {
+	margin: 0 auto;
+	justify-content: center;
+}
+section.yt-vid div.vid-container iframe {
+	width: 705px;
+	height: 400px;
+}
+.sale-btn {
+	background-color: #0d2a65;
+	border-radius: 3px;
+	padding: 10px 15px;
+	display: inline-block;
+	color: #F2EDD7FF;
+	text-decoration: none;
+	margin: 10px 0;
+}
+section.prices {
+	margin: 80px 0;
+	padding: 10px 50px;
+
+}
+section.prices div.price-card {
+	border: 1px solid #d1d1d1;
+	border-radius: 5px;
+	width: 33.3%;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 10px;
+	transition: .2s all ease;
+}
+@media (max-width: 870px){
+	div.prices-container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	section.prices div.price-card {
+		width: 100%;
+		max-width: 400px;
+	}
+	section.prices div.price-card:nth-child(2) {
+		margin: 50px 0;
+	}
+}
+
+section.prices div.price-card:hover {
+	transform: scale(1.03);
+}
+section.prices div.price-card img {
+	max-width: 100%;
+}
+section.prices div.price-card p span {
+	font-weight: bold;
+	margin: 10px 0;
+	display: inline-block;
+	font-size: 1.3em;
+}
+section.prices div.price-card li {
+	list-style: none;
+	text-align: center;
+}
+.item-name {
+	height: 25%;
+	background-color: #f9d684;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+footer {
+	text-align: right;
+	background-color: #94532a;
+	color: #F2EDD7FF;
+}
+div.foot-content {
+	padding: 20px 30px 10px 0;
+}
+div.foot-content div.nav-container {
+	margin-bottom: 20px;
+}
+ul.footer-links {
+	justify-content: flex-end;
+}
+ul.footer-links li a  {
+	margin-right: 18px;
+	text-decoration: none;
+	color: #F2EDD7FF;
+}
+div.copy-container p {
+	font-size: .9em;
+	color: #ccbea7;
+	font-weight: 300;
+}
